@@ -1,0 +1,227 @@
+
+/*---------------------*/
+/*   GENERAL ELEMENTS  */
+/*---------------------*/
+
+body {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding-top: 10px;
+}
+
+h1 {
+    font-family: Lobster, Arial, serif;
+    font-size: 2.5rem;
+    background-color: #cf3d23;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(154, 45, 26, 1);
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+/*---------------------*/
+/*   GENERAL CLASSES   */
+/*---------------------*/
+
+.hide, .plural {
+    display: none;
+}
+/*---------------------*/
+/* CONTAINING ELEMENTS */
+/*---------------------*/
+#container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+header, form, footer {
+    width: 760px;
+}
+header {
+    margin-bottom: 20px;
+}
+
+aside {
+    position: fixed;
+    top: 35px;
+    right: 55px;
+    border: 1px #CCCCCC solid;
+    padding: 15px;
+    font-size: 0.8rem;
+}
+
+aside h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 1rem;
+}
+
+aside h2 span {
+    display: inline-block;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 8px;
+}
+
+aside strong {
+    font-weight: bold;
+}
+
+aside p {
+    margin-bottom: 15px;
+}
+aside h3 {
+    margin-bottom: 5px;
+}
+
+aside li {
+    list-style-type: square;
+    list-style-position: inside;
+    margin-bottom: 5px;
+}
+footer {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+/*------------------------*/
+/* PAGE SPECIFIC ELEMENTS */
+/*------------------------*/
+
+/* --- Order form --- */
+
+form {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+#arm {
+    width: 271px;
+    height: 170px;
+    background:  url(../media/arms.png) 0px 0px no-repeat;
+    position: absolute;
+    top: 70px;
+    left: 123px;
+    z-index: 1;
+}
+
+#arm.pointemail {
+    background-position: 0px -170px;
+    height: 116px;
+    top: 140px;
+}
+
+
+
+#arm.pointamount {
+    background-position: 0px -285px;
+    height: 155;
+    top: 162px;
+}
+
+#arm.pointothers {
+    background-position: 0px -428px;
+    top: 163px;
+}
+
+input[type="radio"], input[type="radio"] + label,input[type="checkbox"],   input[type="checkbox"] + label {
+    display: inline-block;
+}
+
+label {
+    background-position: 0px -428px;
+    top: 163px;
+}
+
+
+
+#face {
+    width: 75px;
+    height: 86px;
+    background: url(../media/face.png) 0px 0px no-repeat;
+    position: absolute;
+    top: 75px;
+    left: 53px;
+    z-index: 20;
+}
+
+select {
+
+}
+
+#salamitje {
+    display: none;
+}
+
+#olijven {
+    display: none;
+}
+
+#ansjovisje {
+    display: none;
+}
+
+/*
+ * Vervolledig met de correcte selecor voor errors
+{
+    background-position: -75px 0px;
+}
+*/
+
+.personbody {
+    padding-left: 370px;
+    background: url(../media/body.png) top left no-repeat;
+    z-index: 10;
+    position: relative;
+}
+
+label {
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 2%;
+}
+.sidelabel {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+select {
+    font-weight: bold;
+}
+
+input {
+    height: 25px;
+    padding: 2%;
+    font-size: 1.3rem;
+    margin-bottom: 2%;
+}
+
+input[type="text"], input[type="email"]  {
+   width: 95%;
+}
+
+#discount {
+    width: 13%;
+}
+
+input[type="submit"] {
+    background-color: #cf3d23;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(154, 45, 26, 1);
+    padding: 12px;
+    border-style: none;
+    width: auto;
+    height: auto;
+}
+input[type="submit"]:hover {
+    background-color: #8c2918;
+    cursor: pointer;
+}

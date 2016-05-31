@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="assets/css/screen.css" type="text/css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1>Pizza Palace</h1>
+
+    </header>
+    <aside>
+        <h2><span>Order details</span></h2>
+
+        <div id="total">
+            <p>Your current order total: &euro; <strong id="currenttotal">0</strong></p>
+        </div>
+
+        <p><strong id="displayname"></strong> you are ordering <strong id="displayamount"></strong> pizza<span
+                class="plural">s</span></p>
+
+        <h3>Chosen toppings:</h3>
+
+        <div id="toppingmessage">
+            <span id="salamitje">- salami -</span>
+            <span id="olijven">- olives -</span>
+            <span id="ansjovisje">- ansjovis -</span>
+        </div>
+        <h3>Your discount: </h3>
+
+        <p id="displaydiscount"></p>
+
+    </aside>
+    <form action="javascript:popup()" method="post">
+        <figure id="arm"></figure>
+        <figure id="face"></figure>
+        <fieldset class="personbody">
+
+            <div>
+               <!-- Plaats hier de naam -->
+            </div>
+            <div>
+                <!-- Plaats hier het email adres -->
+            </div>
+
+            <div>
+                <!-- Plaats hier het aantal pizza's -->
+            </div>
+            <div>
+                <!-- Plaats hier het type pizza -->
+            </div>
+            <div class="topping">
+                <!-- Plaats hier de keuze voor toppings -->
+            </div>
+            <div id="toppings" class="hide">
+                <!-- Plaats hier de toppings zelf -->
+            </div>
+            <div>
+                <!-- Plaats hier de delivery date -->
+            </div>
+            <div>
+                <!-- Plaats hier de discount code -->
+            </div>
+            <input type="submit" value="Place your order" name="placeorder"/>
+        </fieldset>
+    </form>
+
+    <footer><p>Graphics courtesy of &copy; Basecamp </p></footer>
+    <script type="text/javascript" src="assets/js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</div>
+
+
+</body>
+</html>
